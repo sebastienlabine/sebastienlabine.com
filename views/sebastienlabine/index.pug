@@ -1,0 +1,42 @@
+head
+    link(rel="stylesheet", href="sebastienlabine/css/index.css")
+    meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Sébastien Labine
+body
+    header
+        img.logo(src="sebastienlabine/img/logo.png")
+        i.fa.fa-bars.fa-2x(aria-hidden='true', onclick="sideMenu()")
+
+    #side-menu
+       i.fa.fa-times-circle-o(aria-hidden='true', onclick="sideMenu()")
+    .main
+        section.presentation
+            img.me(src="sebastienlabine/img/me.png")
+            h1.name Sébastien Labine
+            p.description Software Engineering Student
+            p.school Polytechnique Montréal
+
+        section.social-media
+             ul
+                li
+                    a(href="https://github.com/sebastienlabine")
+                        img.github(src="sebastienlabine/img/github.png")
+                li
+                    a(href="https://linkedin.com/in/sebastienlabine")
+                        img.github(src="sebastienlabine/img/linkedin.png")
+                li  
+                    a(href="https://smartbills.ca/")
+                        img.github(src="sebastienlabine/img/website.png")
+                li
+                    a(href="https://www.youtube.com/channel/UCVxsvViJpSVhUc04Uw-gUnA")
+                        img.github(src="sebastienlabine/img/youtube.png")
+                li  
+                    a(href="files/cv.pdf")
+                        img.github(src="sebastienlabine/img/cv.png")
+footer
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+script(src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js")
+link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",rel="stylesheet")
+link(href="https://fonts.googleapis.com/css?family=Lato:200,400",rel="stylesheet")
+script(src="sebastienlabine/js/index.js",type="text/javascript")

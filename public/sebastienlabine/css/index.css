@@ -1,0 +1,125 @@
+body, html {
+    max-width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    background: #cb2d3e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */      
+}
+
+h1 {
+    font-size: 40px;
+}
+
+header {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img{
+    width: auto;
+    display: inline-block;
+    filter: brightness(0) invert(1);
+}
+header span {
+    margin: auto;
+    margin-right:0;
+    margin-left: 0;
+}
+header span img{
+    float: left;
+}
+header .fa.fa-bars {
+    margin: auto;
+    margin-right:0;
+    margin-left: 0;
+    height:25px;
+}
+header img.logo {
+    height: 50px;
+}
+
+#side-menu{
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: black;
+    transition: all ease-out 0.5s;
+    display: block;
+}
+#side-menu i.fa.fa-times-circle-o {
+    display: none;
+}
+.main {
+    margin-top: 30px;
+    display: grid;
+    justify-items: center;
+    grid-template-areas:
+    "presentation"
+    "social-media"
+    "parcours"
+    "projets" 
+}
+
+.presentation {
+    text-align: center;
+    align-content: center;
+    grid-area: presentation;
+}
+
+.presentation .me {
+    height: 200px;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
+.presentation .name {
+    margin-bottom: 15px;
+}
+.presentation .description {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.presentation .school{
+  
+}
+
+.social-media {
+    grid-area: social-media;
+}
+
+.social-media ul {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-media ul li {
+    display: inline;
+    padding-right: 10px;
+}
+
+.social-media ul li a img {
+    height: 50px;
+    width: auto;
+}
+
+
+.parcours {
+    grid-area: parcours;
+}
+
+.projets {
+    grid-area: projets;
+}
