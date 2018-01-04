@@ -1,6 +1,20 @@
+$.fn.extend({
+    animateCss: function (animationName, callback) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            if (callback) {
+              callback();
+            }
+        });
+        return this;
+    }
+});
+
 var sideMenu;
 var isOpen = false;
 $(document).ready(function(){
+    animations();
+    
     sideMenu = function() {
         if(!isOpen){
             $('#side-menu').css('width',"200px");
@@ -13,3 +27,13 @@ $(document).ready(function(){
         }
     } 
  });
+ function animations() {
+    $('.me').animateCss('zoomIn', function () {
+        $(".description").animateCss('fadeIn');
+        $(".school").animateCss('fadeIn');
+        $('.name').animateCss('fadeIn', function () {
+            $(".social-media").animateCss('fadeInUp');
+          });
+      });
+}
+

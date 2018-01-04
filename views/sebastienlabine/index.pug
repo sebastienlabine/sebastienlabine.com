@@ -4,11 +4,16 @@ head
     title Sébastien Labine
 body
     header
-        img.logo(src="sebastienlabine/img/logo.png")
+        a(href="http://sebastienlabine.com/")
+            img.logo(src="sebastienlabine/img/logo.png")
         i.fa.fa-bars.fa-2x(aria-hidden='true', onclick="sideMenu()")
 
     #side-menu
         span.exit(onclick="sideMenu()") &#10006;
+        ul
+            li 
+            li
+                a(href="#skills") Skills
     .introduction
         section.presentation
             img.me(src="sebastienlabine/img/me.png")
@@ -32,11 +37,12 @@ body
                 li  
                     a(href="files/cv.pdf")
                         img.github(src="sebastienlabine/img/cv.png")
-    .parcours
-        .ecoles
-        .emplois
+    #skills
+
+
 footer
 link(rel="stylesheet", href="sebastienlabine/css/index.css")
+link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css')
 script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
 script(src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js")
 link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",rel="stylesheet")
