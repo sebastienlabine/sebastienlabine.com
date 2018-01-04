@@ -55,6 +55,10 @@ header img.logo {
     transition: all ease-out 0.5s;
     display: block;
 }
+
+#side-menu ul {
+    display: none;
+}
 #side-menu span.exit {
     display: none;
 }

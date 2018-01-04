@@ -10,24 +10,7 @@ $.fn.extend({
     }
 });
 
-var sideMenu;
-var isOpen = false;
-$(document).ready(function(){
-    animations();
-    
-    sideMenu = function() {
-        if(!isOpen){
-            $('#side-menu').css('width',"200px");
-            $('#side-menu .exit').css('display','block')
-            isOpen = true;
-        } else {
-            $('#side-menu').css('width',"0px");
-            $('#side-menu .exit').css('display','none')
-            isOpen = false;
-        }
-    } 
- });
- function animations() {
+function animations() {
     $('.me').animateCss('zoomIn', function () {
         $(".description").animateCss('fadeIn');
         $(".school").animateCss('fadeIn');
@@ -37,3 +20,21 @@ $(document).ready(function(){
       });
 }
 
+var sideMenu;
+var isOpen = false;
+$(document).ready(function(){
+    animations();
+    
+    sideMenu = function() {
+        if(!isOpen){
+            $('#side-menu').css('width',"200px");
+            $('#side-menu').css('position','fixed')
+            $('#side-menu .exit').css('display','block')
+            isOpen = true;
+        } else {
+            $('#side-menu').css('width',"0px");
+            $('#side-menu .exit').css('display','none')
+            isOpen = false;
+        }
+    }
+ });
